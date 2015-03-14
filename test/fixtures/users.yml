@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: 1
+  github_username: MyString
+  github_user_url: MyString
+  current_zip: 1
+  image: MyString
+  html: false
+  css: false
+  js: false
+  ruby: false
+  python: false
+  java: false
+  c: false
+  php: false
+  go: false
+
+two:
+  name: MyString
+  age: 1
+  github_username: MyString
+  github_user_url: MyString
+  current_zip: 1
+  image: MyString
+  html: false
+  css: false
+  js: false
+  ruby: false
+  python: false
+  java: false
+  c: false
+  php: false
+  go: false

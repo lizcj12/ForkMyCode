@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Github username</th>
+      <th>Github user url</th>
+      <th>Current zip</th>
+      <th>Image</th>
+      <th>Html</th>
+      <th>Css</th>
+      <th>Js</th>
+      <th>Ruby</th>
+      <th>Python</th>
+      <th>Java</th>
+      <th>C</th>
+      <th>Php</th>
+      <th>Go</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.age %></td>
+        <td><%= user.github_username %></td>
+        <td><%= user.github_user_url %></td>
+        <td><%= user.current_zip %></td>
+        <td><%= user.image %></td>
+        <td><%= user.html %></td>
+        <td><%= user.css %></td>
+        <td><%= user.js %></td>
+        <td><%= user.ruby %></td>
+        <td><%= user.python %></td>
+        <td><%= user.java %></td>
+        <td><%= user.c %></td>
+        <td><%= user.php %></td>
+        <td><%= user.go %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

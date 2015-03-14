@@ -1,0 +1,77 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :github_username %><br>
+    <%= f.text_field :github_username %>
+  </div>
+  <div class="field">
+    <%= f.label :github_user_url %><br>
+    <%= f.text_field :github_user_url %>
+  </div>
+  <div class="field">
+    <%= f.label :current_zip %><br>
+    <%= f.number_field :current_zip %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :html %><br>
+    <%= f.check_box :html %>
+  </div>
+  <div class="field">
+    <%= f.label :css %><br>
+    <%= f.check_box :css %>
+  </div>
+  <div class="field">
+    <%= f.label :js %><br>
+    <%= f.check_box :js %>
+  </div>
+  <div class="field">
+    <%= f.label :ruby %><br>
+    <%= f.check_box :ruby %>
+  </div>
+  <div class="field">
+    <%= f.label :python %><br>
+    <%= f.check_box :python %>
+  </div>
+  <div class="field">
+    <%= f.label :java %><br>
+    <%= f.check_box :java %>
+  </div>
+  <div class="field">
+    <%= f.label :c %><br>
+    <%= f.check_box :c %>
+  </div>
+  <div class="field">
+    <%= f.label :php %><br>
+    <%= f.check_box :php %>
+  </div>
+  <div class="field">
+    <%= f.label :go %><br>
+    <%= f.check_box :go %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
